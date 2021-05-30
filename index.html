@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>Text to Lowercase</title>
+  </head>
+  <body>
+
+    <h1 class="display-1 text-center my-4">Text to LowerCase</h1>
+    <p class="text-center w-75 mx-auto mb-5">World's simplest browser-based utility for converting text to lowercase. Load your text in the input form on the left and you'll instantly get lowercase text in the output area. Powerful, free, and fast. Load text – get lowercase text.</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-5">
+                <div class="form-group mb-3">
+                    <label for="inputText"><h5>Input Text:</h5></label>
+                    <textarea id="inputText" class="form-control" name="" rows="3"></textarea>
+                </div>
+               .  <button type="button" class="btn btn-outline-primary" data-clipboard-target="#inputText">Copy To Clipboard</button>
+                    <!-- .alert-primary, .alert-secondary, .alert-success, .alert-danger, .alert-warning, .alert-info, .alert-light, .alert-dark -->
+                
+               
+            </div>
+
+            <div class="col-md-6 mb-5">
+                <div class="form-group mb-3">
+                    <label for="OutputText"><h5>Output Text:</h5></label>
+                    <textarea id="OutputText" class="form-control" name="" rows="3"></textarea>
+                </div>
+               .  <button type="button" class="btn btn-outline-primary" data-clipboard-target="#OutputText">Copy To Clipboard</button>
+                    <!-- .alert-primary, .alert-secondary, .alert-success, .alert-danger, .alert-warning, .alert-info, .alert-light, .alert-dark -->
+                
+
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
+    <script>
+        (function(){
+    new Clipboard('.btn');
+})();
+    </script>
+        <script src="app.js"></script>
+
+</body>
+</html>
